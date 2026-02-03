@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://i.pinimg.com/originals/ba/5b/61/ba5b613b625e1013284f588943cd6e15.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        place-content: center;
+        place-items: center;
+    }
+    .box {
+        width: 600px;
+        height: 700px;
+    }
+    h1 {
+        font-size: 60px;
+        color: white;
+    }
+    .btn-group {
+        gap:60px;   
+    }
+    img{
+        width: 400px;
+        height: 300px;
+    }
+</style>
+<body>
+    <div class="box d-grid justify-content-center align-items-center">
+        <h1 >I Love You💗</h1>
+        <h1>Do You Love Me</h1>
+        <img src="https://drippingquills.com/uploads/default/original/3X/5/c/5cb92cc5f210511ddf36951844624e9c74201c1b.gif" alt="">
+        <div class=" w-100 btn-group   rounded-2">
+            <button onmouseover="Runbtn()" id="no-btn" class="btn btn-danger fs-3">No</button>
+            <button class="btn btn-primary fs-3">Yes</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    const Runbtn = ()=> {
+        const y = Math.random()/3 * window.innerHeight
+        const x = Math.random()/3 * window.innerHeight
+        let btn = document.getElementById("no-btn")
+            btn.style.position ='relative'
+            btn.style.bottom=y + "px"
+            btn.style.left=x + "px"
+    }
+</script>
+</html>
