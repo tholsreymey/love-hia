@@ -32,6 +32,24 @@
         width: 400px;
         height: 300px;
     }
+    @media (max-width: 576px) {
+        body {
+            padding: 10px;
+        }
+        .box {
+            padding: 10px;
+        }
+        h1 {
+            margin-bottom: 15px;
+        }
+        .btn-group {
+            gap: 15px;
+        }
+        button {
+            min-width: 100px;
+            padding: 10px 25px;
+        }
+    }
 </style>
 <body>
     <div class="box d-grid justify-content-center align-items-center">
@@ -47,8 +65,8 @@
 
 <script>
     const Runbtn = ()=> {
-        const y = Math.random()/3 * window.innerHeight
-        const x = Math.random()/3 * window.innerHeight
+        const y = Math.random()/2 * window.innerHeight
+        const x = Math.random()/2 * window.innerHeight
         let btn = document.getElementById("no-btn")
             btn.style.position ='relative'
             btn.style.bottom=y + "px"
